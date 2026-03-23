@@ -1,20 +1,14 @@
-📌 Functionality
+This Snake Game is built using HTML, CSS, and JavaScript using an HTML5 canvas. The player controls the snake using arrow keys to move in four directions.
 
-This Snake Game is built using HTML, CSS, and JavaScript and runs on an HTML5 canvas. The player controls the snake using arrow keys (Up, Down, Left, Right), guiding it to eat food that appears randomly on the grid.
+The snake moves continuously in the chosen direction and grows in length each time it eats food, which appears randomly on the grid. The score increases by 1 for every food item collected.
 
-Each time the snake eats food:
+The snake maintains a consistent color throughout gameplay. Movement updates the snake’s position by adding a new head and removing the tail segment unless food is eaten.
 
-The score increases by 1
-The snake grows in length
-A new segment is added with a different color, while the existing body retains its previous colors
-
-The snake moves continuously in the selected direction and maintains its direction until changed by the player. The game includes Start, Pause/Resume, and Restart controls for better interaction.
+The game includes Start, Pause/Resume, and Restart controls. The pause feature temporarily stops the game loop without resetting progress, while restart resets the entire game state.
 
 Collision detection is implemented:
 
-If the snake hits the wall or itself, the game ends
-The final score is displayed via an alert
+The game ends if the snake hits the wall
+The game also ends if the snake collides with its own body
 
-The pause feature temporarily stops the game loop and can be resumed without resetting progress. Restart resets the game state completely, including score, snake position, and colors.
-
-The game focuses on smooth gameplay, basic logic handling, and visual enhancement through multi-colored snake segments.
+When the game ends, the final score is displayed.
